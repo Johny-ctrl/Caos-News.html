@@ -2,20 +2,156 @@
 <htm>
     <head>
         <meta charset="utf-8">
-        <title>Perfil Usuario</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.82.0">
+        <title>Signin Template · Bootstrap v5.0</title>
+    
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+    
+        
+    
+        <!-- Bootstrap core CSS -->
+    <link href="../bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css" rel="stylesheet">
+    
         <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+        
+       
             .header {
             text-align:center;
             height: 300px;
             padding: 12px;
+            background-image: url("https://static.videezy.com/system/resources/thumbnails/000/053/633/original/News121.jpg") ;
+            }
+            .avatar{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .user-name{
+                font-size: 18px;
+                margin-top: 14px;
+                
+            }
+            .boton{
+                list-style: none;
+                text-align: left;
+                padding: 0;
+
             }
 
         </style>
     </head>
     <body>
-        <div>
-            <img src="">
+        <!--Parte superior-->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Carousel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <!--Perfil-->
+
+        <div class="header">
+            <img class="avatar"
+            src="https://image.flaticon.com/icons/png/512/306/306473.png">
+            <h1 class="user-name">Jose</h1>
         </div>
 
+        <divm class="boton">
+            <h1>Reportero novato</h1>
+            <p>Numero de publicaiones:2</p>
+            <p>Jose, reportero novato de baja experiencia recien ingresado,sus publicaciones en total son 2 y va mejorando poco a poco, sigue asi y llegara lejos</p>
+
+            <h1>
+                Sus publicaciones son
+            </h1>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <p class="card-text">El académico de la Universidad Diego Portales e investigador del Centro de Estudio de Conflicto y Cohesión Social, COES, conversó en 24 Horas sobre el triunfo del izquierdista Pedro Castillo en la primera vuelta de las elecciones en Perú.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.24horas.cl/videos/entrevistas24/peru-pedro-castillo-cercania-violencia-4729029">Ver</a></button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+              
+    
+              <div class="card-body">
+                <p class="card-text">Distintos medios británicos anunciaron este viernes la muerte del príncipe Felipe, duque de Edimburgo. Hasta el Palacio Real y el Castillo de Windsor llegaron cientos de personas a despedirlo. ¿Cómo serán sus funerales?</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.24horas.cl/internacional/muere-principe-felipe-marco-el-reinado-isabel-ii-4726215">Ver</a></button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+    
+
+
     </body>
+
+    <!--Botones de salir-->
+    <footer>
+        <div class="btn-group">
+            <a href="../HTML/Sing up.html" class="w-100 btn btn-lg btn-primary" type="submit">Publicar</a>
+            <a href="../HTML/Sing up.html" class="w-100 btn btn-lg btn-secondary" type="submit">Salir</a>
+        </div>
+    </footer>
 </htm>
